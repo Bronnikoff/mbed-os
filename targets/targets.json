@@ -1883,6 +1883,39 @@
         ],
         "device_name": "STM32F413ZH"
     },
+
+    "DISCO_F407VG": {
+        "inherits": [
+            "MCU_STM32F4"
+        ],
+        "extra_labels_add": [
+            "STM32F407xG"
+        ],
+        "config": {
+            "lpticker_lptim": {
+                "help": "This target supports LPTIM. Set value 1 to use LPTIM for LPTICKER, or 0 to use RTC wakeup timer",
+                "value": 1
+            }
+        },
+        "bootloader_supported": true,
+        "detect_code": [
+            "0830"
+        ],
+        "macros_add": [
+            "STM32F407xx"
+        ],
+        "device_has_add": [
+            "ANALOGOUT",
+            "TRNG",
+            "EMAC"
+        ],
+        "device_has_remove": [
+            "LPTICKER",
+            "SERIAL_FC"
+        ],
+        "device_name": "STM32F407VG"
+    },
+
     "NUCLEO_F413ZH": {
         "inherits": [
             "MCU_STM32F4"
