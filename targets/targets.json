@@ -4403,7 +4403,18 @@
             "SPI",
             "SPISLAVE",
             "TSC"
-        ]
+        ],
+        "supported_application_profiles" : ["full", "bare-metal"],
+        "supported_c_libs": {
+            "arm": [
+                "std",
+                "small"
+            ],
+            "gcc_arm": [
+                "std",
+                "small"
+            ]
+        }
     },
     "ARM_MPS2_M0": {
         "inherits": [
@@ -4412,8 +4423,7 @@
         "core": "Cortex-M0",
         "supported_toolchains": [
             "ARM",
-            "GCC_ARM",
-            "IAR"
+            "GCC_ARM"
         ],
         "extra_labels": [
             "ARM_SSG",
@@ -4454,8 +4464,7 @@
         "core": "Cortex-M0+",
         "supported_toolchains": [
             "ARM",
-            "GCC_ARM",
-            "IAR"
+            "GCC_ARM"
         ],
         "extra_labels": [
             "ARM_SSG",
@@ -4494,8 +4503,7 @@
         "core": "Cortex-M3",
         "supported_toolchains": [
             "ARM",
-            "GCC_ARM",
-            "IAR"
+            "GCC_ARM"
         ],
         "extra_labels": [
             "ARM_SSG",
@@ -4535,8 +4543,7 @@
         "core": "Cortex-M4F",
         "supported_toolchains": [
             "ARM",
-            "GCC_ARM",
-            "IAR"
+            "GCC_ARM"
         ],
         "extra_labels": [
             "ARM_SSG",
@@ -4576,8 +4583,7 @@
         "core": "Cortex-M7FD",
         "supported_toolchains": [
             "ARM",
-            "GCC_ARM",
-            "IAR"
+            "GCC_ARM"
         ],
         "extra_labels": [
             "ARM_SSG",
